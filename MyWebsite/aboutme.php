@@ -19,7 +19,7 @@
 					<li> I'm from Miami, FL and think this place is way to cold. </li>
 					<li> I am a Junior in the College of Engineering at Cornell University. </li>
 					<li> I hope to get a major in computer science with a minor in business. </li>						
-					<li> I want to be involved in software development </li>
+					<li> I want to be involved in software development when I graduate. </li>
 					<li> Oh, and did I almost forget to mention that I am Cuban? 
 					</ul>
 						
