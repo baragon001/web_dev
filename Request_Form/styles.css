@@ -1,0 +1,46 @@
+.main_form{
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #DEDEDE), color-stop(1, #00618F));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin:auto;
+position:relative;
+width:550px;
+height:600px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #800000	;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px; 
+border-radius: 10px; 
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.main_form h1 {
+	text-align: center;
+}
+
+input   
+{
+width:375px;
+display:box; 
+border: 1px solid #999;
+height: 25px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<html> 
+
+<head>
+
+<title>Project Request Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div class="main_form">
+	<form method="post" action="submit-thanks.php">
+	<h1> Cornell Sun Web Department <br> 
+		Project Request Form: </h1>	
+		<label>
+			Name: <input id="Name" type="text" name="Name" required="on" /> <br> <br> 
+		</label>
+		<label>
+			Email: <input id="Email" type="text" name="Email" required="on"/> <br> <br>
+		</label>
+		<label>
+			Department: <input id="Department" type="text" name="Department" required="on" /> <br> <br>
+		</label>
+		<label>
+			Title of Request: <input id="Title" type="text" name="Title" required="on" /> <br> <br>
+		</label>
+		<label>
+			Description of request: <br>
+			<textarea id="description" rows="10" cols="60" name="descr" required="on"
+			placeholder="Please be as descriptive as possible. Email any additional files to web-editor@cornellsun.com"></textarea> <br />
+		</label>
+		<label>
+			Desired Completion Date: <input id="date" type="date" name="date" required/> <br> <br>
+		</label>
+		<input type="submit" value="Submit">
+	</div>
+	</form>
+
+</body>
+
+</html>
