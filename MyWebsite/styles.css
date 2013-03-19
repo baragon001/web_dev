@@ -333,3 +333,19 @@ input
 	margin-top:0px;
 	margin-bottom:0px;
 }
+.sel_label {
+	padding:40px;
+}
+#sel_act {
+	vertical-align:middle;
+	font-size: 14px;
+	width: 155px;
+	height: 30;
+	margin-left: 50px;
+}
+#res_wrapper {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+

@@ -28,13 +28,21 @@
 			<input class="rdio" type="radio" name="gender" value="male"> Male 
 			<input class="rdio" type="radio" name="gender" value="female"> Female
 			<br><br>
-			Body Type:
+			<span class="sel_label">Body Type: </span><span class="sel_label">Activity Level:</span>
 			<div id="sel_wrapper">
 			<select id="sel_body_type">
 			  <option value="ecto" selected="selected">Ectomorph</option>
 			  <option value="meso">Mesomorph</option>
 			  <option value="endo">Endomorph</option>
 			</select>
+			<select id="sel_act">
+			  <option value="1.2" selected="selected">Sedentary</option>
+			  <option value="1.375">Lightly Active </option>
+			  <option value="1.55"> Moderatey Active</option>
+			  <option value="1.725"> Very Active</option>
+			  <option value="1.9"> Extra Active</option>
+			</select>
+			
 			</div>
 			<br>
 			<div id="ecto_details">
