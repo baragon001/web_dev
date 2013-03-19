@@ -34,7 +34,15 @@
 	margin-bottom: auto;
 }
 
-#menu ul li {
+#menu ul li.first {
+	
+	padding: 5px 5px;
+	text-transform: uppercase;
+	font-size: 15px;
+	display: inline;
+	}
+	
+#menu ul li.border {
 	
 	padding: 5px 5px;
 	border-left: 1px solid white;
@@ -254,7 +262,6 @@ input
 }
 
 #sname {
-
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
 	width:300px;
@@ -264,4 +271,40 @@ input
 	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
+
+/*Nutrition Calculator*/
+#bodytype .nutbar {
+	width: 50px;	
+}
+
+
+.rdio {
+	width: 20px;
+	height: 20px;
+	display: inline;
+	vertical-align:middle;
+	text-align:center;
+}
+
+#bdytype {
+	padding:100px;
+}
+select {
+	vertical-align:middle;
+	font-size: 14px;
+	width: 140;
+	height: 30;
+}
+
+#bodytype ul {
+	float: right;
+}
+
+#bodytype ul li {
+	text-align: left; 
+	margin-left: auto; 
+	margin-right: auto;
+	width: 400px;
+}
+
 	
