@@ -5,37 +5,40 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="text/javascript.js"></script>
 </head>
-	<div class=wrapper id=aboutwrapper>
+	<div id="nutwrapper" class="wrapper">
 	<?php include("header.html");?>
 	<?php include("footer.html");?>
-	<body id="aboutbody" class="body">
+	<body class="body">
 	<div id="var_form" class="main_form" >
 	<form method="post" action="nutrition_results.php" onSubmit="return validAll();">
 			<h1> Enter Your information: </h1>	
 			<h3 id="fix_yo_stuff" class="warning">Please Fix Errors before Proceeding</h3> <br>
-			Height: <input class="varBar height" type="number" id="heightft" required="on" /> feet  
-					<input class="varBar height" type="number" id="heightinch" /> inches 
+			Height: <input name="feet" " class="varBar height" type="number" id="heightft" required="on" /> feet  
+					<input name="inches" class="varBar height" type="number" id="heightinch" /> inches 
 					<label id="height_warning" class="warning"> Invalid Input </label>
 			 <br> <br> 
 			<label>
-			Weight: <input class="varBar" type="number" id="weight" required="on"/>pounds
+			Weight: <input name="weight" class="varBar" type="number" id="weight" required="on"/>pounds
 			<label id="weight_warning" class="warning"> Invalid Input </label> <br> <br>
 			</label>
+			 <label id="goalLabel">Desired Weight:<input name="goal" " class="varBar" required="on"
+			  type="number" id="goalweight"/> </label> pounds 
+			  <label id="weightgoal_warning" class="warning"> Invalid Input </label><br> <br>
 			<label>
-			Age: <input class="varBar" type="number" id="age" required="on" /> years
+			Age: <input name="age" class="varBar" type="number" id="age" required="on" /> years
 			<label id="age_warning" class="warning"> Invalid Input </label> <br> <br>
 			</label>
-			<input class="rdio" type="radio" name="gender" value="male"> Male 
-			<input class="rdio" type="radio" name="gender" value="female"> Female
+			<input class="rdio" type="radio" name="gender" value="male"/> Male 
+			<input class="rdio" type="radio" name="gender" value="female"/> Female
 			<br><br>
 			<span class="sel_label">Body Type: </span><span class="sel_label">Activity Level:</span>
 			<div id="sel_wrapper">
-			<select id="sel_body_type">
+			<select name="body_type" id="sel_body_type">
 			  <option value="ecto" selected="selected">Ectomorph</option>
 			  <option value="meso">Mesomorph</option>
 			  <option value="endo">Endomorph</option>
 			</select>
-			<select id="sel_act">
+			<select name="activity_level" id="sel_act">
 			  <option value="1.2" selected="selected">Sedentary</option>
 			  <option value="1.375">Lightly Active </option>
 			  <option value="1.55"> Moderatey Active</option>
@@ -45,7 +48,7 @@
 			
 			</div>
 			<br>
-			<div id="ecto_details">
+			<div id="ecto_details" class="clearfix">
 				<h2> Typical Ectomorph Traits</h2>
 				<img class="bodyimage" src="Images/ecto.jpg" alt="photo link broken!">
 				<ul>
@@ -55,9 +58,9 @@
 				<li> Thin-Low BMI </li>
 				<li> Finds it hard to gain weight</li>
 				<li> Fast metabolism </li>
-				</ul> <br>		
+				</ul> 		
 			</div>
-			<div id="meso_details">
+			<div id="meso_details" class="clearfix">
 				<h2> Typical Mesomorph Traits</h2>
 				<img class="bodyimage" src="Images/meso.jpg" alt="photo link broken!">
 				<ul>
@@ -68,9 +71,9 @@
 				<li> Strong</li>
 				<li> Gains muscle easily </li>
 				<li> Gains fat more easily than ectomorphs </li>
-				</ul> <br>		
+				</ul> 		
 			</div>
-			<div id="endo_details">
+			<div id="endo_details" class="clearfix">
 				<h2> Typical Endomorph Traits</h2>
 				<img class="bodyimage" src="Images/endo.jpg" alt="photo link broken!">
 				<ul>
@@ -82,7 +85,7 @@
 				<li> Finds it hard to lose fat</li>
 				<li> Slow metabolism </li>
 				<li> Muscles are not so well defined </li>
-				</ul> <br>		
+				</ul> 	
 			</div>
 			<input type="submit" value="Get My Diet!">
 	</form>

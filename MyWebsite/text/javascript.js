@@ -5,7 +5,6 @@ function validHeight () {
 			$('#height_warning').css("display", "inline");return false;
 		} else {$('#height_warning').css("display", "none"); return true;}
 }
-
 function validWeight() {
 	var weight=$("#weight").val();
 	if (weight>1400) {
@@ -22,13 +21,20 @@ function validAll(){
 	var height=validHeight();
 	var weight=validWeight();
 	var age=validAge();
-	if(!(validHeight()&&validWeight()&&validAge())) {
+	var goal=validGoal();
+	if(!(height&&goal&&weight&&age)) {
 		$('#fix_yo_stuff').css("display", "inline"); 
 		return false;
 	}
 	else {return true;}
 }
-
+function validGoal() {
+	var weight=$("#weight").val();
+	var goal=$("#goalweight").val();
+	if ((goal>weight)||goal<0) {
+		$('#weightgoal_warning').css("display", "inline"); return false;
+	} else {$('#weightgoal_warning').css("display", "none");return true;}
+}
 $(document).ready(function(){
 	//body type change-update details for body types
 	$('#sel_body_type').change(function() { 
@@ -55,4 +61,5 @@ $(document).ready(function(){
 	/**age changes-check that age<122(apparently someone was that old)
 	and displays warning if needed **/
 	$('#age').change(validAge);
+	$('#goalweight').change(validGoal);
 }); 

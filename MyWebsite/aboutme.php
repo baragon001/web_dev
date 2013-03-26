@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <title> About Me </title>
 </head>
-		<div class=wrapper id=aboutwrapper>
+		<div class="wrapper" id="aboutwrapper">
 		<?php include("header.html");?>
 		<?php include("footer.html");?>
 		
@@ -54,7 +54,9 @@
 				<img src="Images/me.jpg" id=myphoto alt="photo link broken!">
 				</div>	
 			</div>
+		</body>
 		</div>
-	</body>
+		
+	
 </html>
 			
